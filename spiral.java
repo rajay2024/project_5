@@ -39,11 +39,11 @@ public class spiral {
 
         for (int i = 0; i < length; i++) {
 
-            reverse = str.charAt(i);
+            reverse = str.charAt(i) + reverse;
 
         }
 
-        System.out.println(reverse);
+        System.out.println("reversed string is :"+reverse);
 
     }
 }
