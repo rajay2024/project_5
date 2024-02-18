@@ -39,7 +39,7 @@ public class spiral {
 
         for (int i = 0; i < length; i++) {
 
-            reverse = str.charAt(i) + reverse;
+            reverse = str.charAt(i);
 
         }
 
