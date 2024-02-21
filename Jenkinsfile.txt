@@ -1,7 +1,7 @@
 pipeline {
     agent { 
         node {
-            label my_pc
+            label 'my_pc'
             }
       }
     triggers {
@@ -16,6 +16,9 @@ pipeline {
         stage('Test') {
             steps {
                 echo "Testing.."
+                sh '''
+                python hello.py
+                '''
             }
         }
         stage('Deliver') {
